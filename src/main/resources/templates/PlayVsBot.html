@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >>
+<link rel="stylesheet" th:href="@{/style.css}"/>
+<head>
+    <meta charset="UTF-8">
+    <title>KMN</title>
+</head>
+<body>
+<div class="container">
+
+
+
+<h1><p th:text="${choice}"></p></h1>
+    <div class="choice">
+
+<form method="post" th:action="@{/}" class="rock">
+    <input type="hidden" th:value="ROCK" name="choice">
+    <button type="submit"><img src="https://img.icons8.com/emoji/48/null/rock-emoji.png"></button>
+</form>
+
+<form method="post" th:action="@{/}" class="paper">
+    <input type="hidden" th:value="PAPER" name="choice">
+    <button type="submit"><img src="https://img.icons8.com/color-glass/48/null/matt-paper.png"/></button>
+</form>
+
+<form method="post" th:action="@{/}"  class="scissors">
+    <input type="hidden" th:value="SCISSORS" name="choice">
+    <button type="submit"><img src="https://img.icons8.com/color-glass/48/null/cut--v1.png"/></button>
+</form>
+
+</div>
+
+
+
+
+
+</div>
+</body>
+</html>
